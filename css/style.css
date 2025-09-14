@@ -1,0 +1,1390 @@
+
+/*----------------------------------------------------------------------------------
+ 1. body Start
+----------------------------------------------------------------------------------*/
+body{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.42857143;
+	font-size: 14px;
+	color: #919191;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4{
+    color: #333333;
+}
+::selection {
+    background: #fdc716;
+    color: #ffffff;
+}
+::-moz-selection {
+    background: #fdc716;
+    color: #ffffff;
+}
+::-webkit-selection {
+    background: #fdc716;
+    color: #ffffff;
+}
+/*----------------------------------------------------------------------------------
+ 1. body End
+----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------
+ 2. common css Start
+----------------------------------------------------------------------------------*/
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+a, input, button{
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+a:focus, input:focus, button:focus, textarea:focus {
+    outline: none;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    text-decoration: none;
+}
+a:after, button:after, 
+a:before, button:before{
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.full_width{
+	float: left;
+	width: 100%;
+}
+.gs_section{
+	float: left;
+	width: 100%;
+}
+.section_heading{
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.section_heading h2 {
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom:0px;
+}
+.section_heading h2 span {
+    color: #fdc716;
+}
+
+/*===== button css start ======*/
+.gs_read_m {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color:transparent;
+    padding: 0 35px;
+    position: relative;
+    border: 1px solid transparent;
+    z-index: 9;
+    overflow: hidden;
+}
+.gs_read_m:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fdc716;
+    z-index: -9;
+    /* transform: translateX(100%); */
+}
+.gs_read_m:hover, 
+.gs_read_m:focus{
+    text-decoration: none;
+    color: #fdc716;
+    border: 1px solid;
+}
+.gs_read_m:hover:after, 
+.gs_read_m:focus:after{
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.pad_top_80{
+    padding-top: 80px;
+}
+.pad_top_bottom_80{
+    padding: 80px 0;
+}
+/*===== button css start ======*/
+/*----------------------------------------------------------------------------------
+ 2. common css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 3. Preloader css Start
+----------------------------------------------------------------------------------*/
+.preloader {
+    position: fixed;
+    z-index: 9999;
+    background: #ffffff;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+.preloader_inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+}
+.loading_icon img {
+    display: inline-block;
+    max-width: 100%;
+}
+/*----------------------------------------------------------------------------------
+ 3. Preloader css End
+----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------
+ 4. header Top css Start
+----------------------------------------------------------------------------------*/
+.gs_top_header {
+    background-color: #292929;
+    padding: 15px 0;
+}
+.header_top_left {
+    float: left;
+    width: 100%;
+}
+.header_top_left > div {
+    float: left;
+}
+.header_top_left .header_text {
+    padding-top: 5px;
+}
+.header_top_left .language_select {
+    padding-left: 20px;
+}
+.language_select > i {
+    color: #fdc716;
+    float: left;
+    padding-top: 9px;
+}
+.language_select .select_wrapper {
+    position: relative;
+    float: left;
+}
+.language_select select {
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    _noFocusLine: expression(this.hideFocus=true);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -khtml-opacity: 0;
+    -moz-opacity: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    min-width: 79px;
+    height: 30px;
+    padding: 0 15px;
+}
+.language_select select:focus {
+    outline: none;
+    -webkit-outline: none;
+    -moz-outline: none;
+}
+.language_select .select_wrapper span {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    pointer-events: none;
+    margin-top: -8.5px;
+    color: #fdc716;
+    font-size: 12px;
+}
+.header_text p {
+    color: #fff;
+    margin-bottom: 0;
+}
+.header_top_right {
+    float: right;
+    color: #fff;
+    padding-top: 5px;
+}
+.header_top_right p {
+    margin-bottom: 0;
+}
+.header_top_right p i {
+    color: #fdc716;
+    padding-right: 6px;
+}
+/*----------------------------------------------------------------------------------
+ 4. header Top css End
+----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------
+ 5. header Middle css Start
+----------------------------------------------------------------------------------*/
+.gs_middle_header {
+    background: #ffffff;
+    padding: 35px 0;
+}
+.gs_logo {
+    float: left;
+}
+.gs_logo a{
+    display: inline-block;
+}
+.gs_logo a img{
+    max-width: 100%;
+    display: inline-block;
+}
+.gs_header_contacts{
+    float: left;
+    width: 100%;
+}
+
+.gs_header_contacts ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.gs_header_contacts ul li {
+    float: left;
+    width: 33.33%;
+    padding-right: 10px;
+}
+.gs_header_contacts ul li:last-child {
+    padding-right: 0;
+}
+.gs_header_contacts ul li div{
+    display: table-cell;
+}
+.gs_header_contacts ul li .con_icons {
+    vertical-align: top;
+}
+.gs_header_contacts ul li .con_icons i {
+    color: #fdc716;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    border: 1px solid;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+
+.gs_header_contacts ul li .con_icons i:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fdc716;
+    z-index: -1;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+.gs_header_contacts ul li .con_icons:hover i{
+    color: #ffffff;
+    border-color: #fdc716;
+}
+.gs_header_contacts ul li .con_icons:hover i:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.gs_header_contacts .con_details {
+    padding-left: 15px;
+    vertical-align: top;
+}
+.con_details h4 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+.con_details p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+.con_details p a {
+    text-decoration: none;
+    color: #919191;
+}
+.con_details p a:hover {
+    color: #fdc716;
+}
+
+/*----------------------------------------------------------------------------------
+ 5. header Middle css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 6. Navigation Header css Start
+----------------------------------------------------------------------------------*/
+.gs_navigation_header {
+    margin-bottom: -40px;
+    position: relative;
+    z-index: 9;
+}
+
+.Navigation_wrapper {
+    float: left;
+    width: 100%;
+    background-color: #292929;
+}
+.gs_navigation {
+    float: left;
+    width: 80%;
+}
+.gs_navigation ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    float: left;
+}
+.gs_navigation > ul > li {
+    float: left;
+    padding: 24px 18px;
+}
+.gs_navigation > ul > li > a {
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+    position: relative;
+    padding: 5px;
+    display: inline-block;
+}
+.gs_navigation > ul > li > a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0px;
+    width: 0%;
+    height: 1px;
+    background: #fdc716;
+}
+.gs_navigation > ul > li > a:hover:after {
+    width: 100%;
+}
+.gs_navigation > ul > li > a:hover {
+    color: #fdc716;
+    text-decoration: none;
+}
+
+/* ====nav search form css ==== */
+.gs_navigation .nav_form {
+    float: right;
+    padding-top: 20px;
+}
+.nav_form .form_group{
+    position: relative;
+}
+
+.nav_form input.nav_search {
+    background-color: #171717;
+    border: none;
+    height: 40px;
+    color: #ffffff;
+    padding: 0 42px 0 15px;
+    width: 200px;
+}
+.nav_form .search_icon {
+    color: #ffffff;
+    background-color: #fdc716;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    line-height:38px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.nav_form .search_icon:hover, 
+.nav_form .search_icon:focus{
+    color: #fdc716;
+    background-color: transparent;
+    border-left: 1px solid;
+}
+/* ====nav search form css ==== */
+.get_quote {
+    float: right;
+    color: #ffffff;
+    background-color: #fdc716;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.get_quote:hover {
+    color: #292929;
+    text-decoration: none;
+    background-color: #f9f9f9;  
+}
+
+
+/*=== nav toggle css ===*/
+.nav_toggle {
+    position: relative;
+    z-index: 9999;
+    cursor: pointer;
+    width: 35px;
+    height: 20px;
+    float: right;
+    margin-top: 33px;
+    margin-right: 25px;
+}
+.nav_toggle i {
+    float: left;
+    width: 100%;
+    background: #fdc716;
+    height: 4px;
+    margin-bottom: 3px;
+    border-radius: 2em;
+    transition:all ease-in 0.25s;
+    -moz-transition:all ease-in 0.25s;
+    -webkit-transition:all ease-in 0.25s;
+}
+.nav_toggle:hover i:nth-child(2){
+    width:90%;
+}
+.nav_toggle:hover i:nth-child(3){
+    width:80%;
+}
+.nav_toggle.toggle_open i:first-child {
+    transform: translateY(12px) rotate(45deg);
+    -webkit-transform: translateY(12px) rotate(45deg);
+    -moz-transform: translateY(12px) rotate(45deg);
+    -ms-transform: translateY(12px) rotate(45deg);
+    -o-transform: translateY(12px) rotate(45deg);
+    margin: 0;
+    width:100%;
+}
+.nav_toggle.toggle_open i:nth-child(2) {
+    transform: translateY(8px) rotate(-45deg);
+    -webkit-transform: translateY(8px) rotate(-45deg);
+    -moz-transform: translateY(8px) rotate(-45deg);
+    -ms-transform: translateY(8px) rotate(-45deg);
+    -o-transform: translateY(8px) rotate(-45deg);
+    margin: 0;
+    width:100%;
+}
+.nav_toggle.toggle_open i:nth-child(3) {
+    transform: translateY(-50px) rotate(90deg);
+    -webkit-transform: translateY(-50px) rotate(90deg);
+    -moz-transform: translateY(-50px) rotate(90deg);
+    -ms-transform: translateY(-50px) rotate(90deg);
+    -o-transform: translateY(-50px) rotate(90deg);
+    opacity: 0;
+    visibility: hidden;
+}
+/*=== nav toggle css ===*/
+/*----------------------------------------------------------------------------------
+ 6. Navigation Header css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 7. Home Banner Section Start
+----------------------------------------------------------------------------------*/
+.gs_home_banner{
+
+}
+.banner_slider{
+    float: left;
+    width: 100%;
+}
+.banner_slider .slides {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center center;
+}
+.banner_slider .slides:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color:#000000;
+    opacity: 0.5;
+	z-index:-1;
+}
+.slider_caption {
+    padding: 250px 0;
+}
+.slider_caption h2 {
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 70px;
+}
+.banner_slider .owl-nav div {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    -webkit-transition: all ease-in 0.25s;
+    -moz-transition: all ease-in 0.25s;
+    -ms-transition: all ease-in 0.25s;
+    -o-transition: all ease-in 0.25s;
+    transition: all ease-in 0.25s;   
+}
+.banner_slider .owl-nav .owl-prev{
+    left: 0;
+}
+.banner_slider .owl-nav .owl-next {
+    right: 0;
+}
+.banner_slider:hover .owl-nav .owl-prev {
+    left: 10px;
+    opacity: 1;
+}
+.banner_slider:hover .owl-nav .owl-next {
+    right: 10px;
+    opacity: 1;
+}
+/*----------------------------------------------------------------------------------
+ 7. Home Banner Section End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 7. About Section css Start
+----------------------------------------------------------------------------------*/
+.gs_about_section{
+    padding-top: 80px;
+}
+.about_desc {
+    float: left;
+    width: 100%;
+}
+.about_thumb img {
+    display: inline-block;
+}
+.about_desc h2 {
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.about_desc h2 span {
+    color: #fdc716;
+}
+.about_desc p {
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+.about_desc .about_box {
+}
+.about_img_box h4{
+    font-size: 18px;
+    color: #333333;
+    margin-top: 15px;
+}
+/*----------------------------------------------------------------------------------
+ 7. About Section css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 8. service Section css Start
+----------------------------------------------------------------------------------*/
+.gs_service_section{
+    padding-top: 80px;
+    background-color: #F9F9F9;
+    padding-bottom: 50px;
+}
+.gs_service_box {
+    float: left;
+    width: 100%;
+    border: 1px solid #fdc716;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+.gs_service_box .service_icon {
+    display: table-cell;
+    vertical-align: top;
+}
+.service_icon i {
+    width: 70px;
+    height: 70px;
+    line-height: 68px;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    font-size: 34px;
+    border: 1px solid #fdc716;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.service_icon i:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #fdc716;
+    z-index: -1;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.gs_service_box .service_detail{
+    display: table-cell;
+    padding:20px; 
+}
+.service_detail h4 {
+    text-transform: capitalize;
+}
+.service_detail p {
+    line-height: 22px;
+}
+.gs_service_box:hover .service_icon i{
+    color: #fdc716;
+}
+.gs_service_box:hover .service_icon i:after{
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+/*----------------------------------------------------------------------------------
+ 8. service Section css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 9. work process Section css Start
+----------------------------------------------------------------------------------*/
+
+/*==== progress bar css ====*/
+.gs_progress_bar{
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+.gs_progress_bar > ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.gs_progress_bar > ul > li {
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.progress_header h4 {
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+}
+.progress_header span {
+    font-size: 16px;
+    color: #333333;
+    float: right;
+    margin-top: 8px;
+    position: absolute;
+    right: 0;
+}
+.progress_panel {
+    width: 100%;
+    border: 1px solid #fdc716;
+    height: 10px;
+    border-radius: 2em;
+    position: relative;
+}
+.progress_panel .progress_slide {
+    position: absolute;
+    width: 2%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #fdc716;
+    transition: all ease-in 1.5s;
+    -webkit-transition: all ease-in 1.5s;
+    -moz-transition: all ease-in 1.5s;
+}
+.progress_slide:after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 11px;
+    top: 0;
+    right: -10px;
+    background-color: #fdc716;
+    border-radius: 50%;
+    margin-top: -1px;
+    border-left: 1px solid #fff;
+}
+/*==== progress bar css ====*/
+
+.gs_work_section{
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.process_details {
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.process_details h4 {
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.process_details p{
+    line-height: 24px;
+}
+.process_details .gs_read_m {
+    margin-top: 10px;
+}
+/*----------------------------------------------------------------------------------
+ 9. work process Section css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 10. Staff Section css Start
+----------------------------------------------------------------------------------*/
+.gs_staff_section{
+    padding-top: 80px;
+    background-color: #F9F9F9;
+}
+.staff_box {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.staff_thumb{
+    display: inline-block;
+    overflow: hidden;
+}
+.staff_thumb img {
+    border-radius: 50%;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;   
+}
+.staff_box:hover .staff_thumb img { 
+   -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    filter: grayscale(1);
+}
+.staff_box h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.staff_box h5 {
+    display: inline-block;
+    margin-top: 0;
+    border-bottom: 2px solid #fdc716;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.staff_box ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    overflow: hidden;
+}
+.staff_box ul li {
+    display: inline-block;
+}
+.staff_box ul li a {
+    color: #fdc716;
+    font-size: 16px;
+    padding: 5px;
+    display: block;
+}
+.staff_box ul li a:hover {
+    color: #333333;
+}
+/*----------------------------------------------------------------------------------
+ 10. Staff Section css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 11. Skill Section css Start
+----------------------------------------------------------------------------------*/
+.gs_counter_section {
+    background-color: #fdc716;
+    padding-top: 75px;
+}
+.gs_counter_bar {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.gs_counter_bar h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.gs_counter_bar h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0;
+}
+/*----------------------------------------------------------------------------------
+ 11. Skill Section css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 12. Project Section css Start
+----------------------------------------------------------------------------------*/
+.gs_project_section{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.project_body{
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.project_thumb {
+    position: relative;
+    perspective: 1000px;
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -o-perspective: 1000px;
+    -ms-perspective: 1000px;
+}
+.project_overlay {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background-color: rgba(253, 199, 22, 0.85);
+    color: #fff;
+    text-align: center;
+    transform: rotateX(50deg);
+    -webkit-transform: rotateX(50deg);
+    -moz-transform: rotateX(50deg);
+    -ms-transform: rotateX(50deg);
+    -o-transform: rotateX(50deg);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.project_overlay .overlay_text {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+    padding: 0px 10px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(5%);
+    -ms-transform: translateY(5%);
+    -o-transform: translateY(5%);
+    transform: translateY(5%);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all linear 0.3s 0.3s;
+    -moz-transition: all linear 0.3s 0.3s;
+    -ms-transition: all linear 0.3s 0.3s;
+    -o-transition: all linear 0.3s 0.3s;
+    transition: all linear 0.3s 0.3s;
+}
+.view_more_btn{
+    text-align: center;
+}
+.project_thumb:hover .project_overlay{
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+}
+.project_thumb:hover .overlay_text {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*----------------------------------------------------------------------------------
+ 12. Project Section css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 13. Testimonial Section css Start
+----------------------------------------------------------------------------------*/
+.gs_testimonial_section{
+    padding-top: 80px;
+    background-color:#F9F9F9; 
+    padding-bottom: 80px;   
+}
+.testimonial_carousel{
+    float: left;
+    width: 100%;
+}
+
+.testimonial_body {
+    text-align: center;
+    float: left;
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 40px;
+}
+.testimonial_body .test_paragraph {
+    padding: 40px;
+    background: #fdc716;
+    color: #fff;
+    line-height: 24px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.testimonial_body .test_paragraph:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -50px;
+    border-top: 50px solid #fdc716;
+    z-index: -1;
+    border-right-style: solid;
+    border-right-color: transparent;
+    border-left-style: solid;
+    border-left-color: transparent;
+}
+.testimonial_body .test_paragraph p {
+    margin-bottom: 0;
+}
+.testimonial_body .client_thumb {
+    display: table;
+    border-radius: 50%;
+    margin: 0px auto 0;
+    border: 3px solid #fff;
+    z-index: 1;
+    position: relative;
+    backface-visibility: hidden;
+}
+.testimonial_body .client_thumb img {
+    border-radius: 100%;
+}
+.testimonial_body h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.testimonial_body h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.testimonial_carousel .owl-nav {
+    text-align: center;
+    margin-top: 30px;
+}
+.testimonial_carousel .owl-nav div {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fdc716;
+    color: #fff;
+    font-size: 15px;
+    margin: 0 5px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.testimonial_carousel .owl-nav div:hover{
+    background-color: #333333;
+}
+/*----------------------------------------------------------------------------------
+ 13. Testimonial Section css End
+----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------
+ 14. Brands Logo Section css End
+----------------------------------------------------------------------------------*/
+.gs_logo_section{
+    background-color: #ffffff;
+    padding:80px 0; 
+}
+.logo_carousel{
+    text-align: center;
+}
+.logo_carousel .brand_thumb img {
+    max-width: 100%;
+    display: inline-block;s;
+    transition: all ease-in 0.3s;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+    -webkit-filter: grayscale(1); 
+    -moz-filter: grayscale(1); 
+    -ms-filter: grayscale(1); 
+    filter: grayscale(1);
+}
+.logo_carousel .brand_thumb img:hover {
+    -webkit-filter: grayscale(0); 
+    -moz-filter: grayscale(0); 
+    -ms-filter: grayscale(0);
+    filter: grayscale(0);
+}
+/*----------------------------------------------------------------------------------
+ 14. Brands Logo Section css End
+----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------
+ 15. About Page css End
+----------------------------------------------------------------------------------*/
+.gs_page_banner{
+    background:#111 url(http://via.placeholder.com/1920x399) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.color_overlay {
+    background-color: rgba(0, 0, 0, 0.70);
+}
+.page_banner_heading{
+    float: left;
+    width: 100%;
+    padding: 160px 0 120px;
+    text-align: center;
+}
+.page_banner_heading .page-heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fdc716;
+    margin-bottom: 15px;
+    margin-top: 0;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.page_banner_heading .breadcrumb {
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 0;
+}
+.page_banner_heading .breadcrumb li {
+    color: #fdc716;
+    font-weight: 500;
+}
+.page_banner_heading .breadcrumb li a{
+    color:#ffffff;
+    text-decoration: none;
+}
+.gs_about_services {
+    padding-top: 30px;
+}
+.gs_about_page {
+    padding-bottom: 50px;
+}
+/*----------------------------------------------------------------------------------
+ 15. About Page css End
+----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------
+ 16. Contact Page css Start
+----------------------------------------------------------------------------------*/
+.gs_contact_section{
+
+}
+.ds_contact_form {
+    float: left;
+    width: 100%;
+    background-color: #fdc716;
+    padding: 50px;
+}
+.ds_contact_form h2 {
+    color: #ffffff;
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.contact_form_wrap label {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 17px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+.contact_form_wrap fieldset {
+    position: relative;
+    margin-bottom: 25px;
+}
+.contact_form_wrap fieldset span {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    color: #fdc716;
+    font-size: 16px;
+    line-height: 20px;
+}
+.contact_form_wrap input, 
+.contact_form_wrap textarea {
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    padding-left: 45px;
+}
+.contact_form_wrap input{
+    height: 50px;
+}
+.contact_form_wrap textarea {
+    height: 150px;
+    padding-top: 15px;
+    resize: none;
+}
+.contact_form_wrap .submit_btn {
+    background-color: #fff;
+    border: transparent;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fdc716;
+    text-transform: capitalize;
+    padding: 0 36px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+.contact_form_wrap .submit_btn:hover, 
+.contact_form_wrap .submit_btn:focus {
+    color: #ffffff;
+    background-color: #333333;
+}
+
+/*==== contact address css ====*/
+.ds_contact_address{
+    float: left;
+    width: 100%;
+}
+.ds_contact_address h2 {
+    color: #333333;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.ds_contact_address h2 span {
+    color: #fdc716;
+}
+
+.ds_contact_address ul li {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-right: 0;
+}
+
+.ds_contact_address ul li .con_icons i {
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+}
+.ds_contact_address ul li .con_details {
+    padding-left: 30px;
+}
+/*==== contact address css ====*/
+/*==== contact map css ====*/
+.gs_contact_map {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #fdc716;
+    padding-top: 30px;
+}
+#contact_map {
+    width: 100%;
+    height: 430px;
+}
+/*==== contact map css ====*/
+/*----------------------------------------------------------------------------------
+ 16. Contact Page css End
+----------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------------
+ 20. footer Section css Start
+----------------------------------------------------------------------------------*/
+.gs_footer_section {
+    background-color: #292929;
+    padding-top: 80px;
+}
+.gs_footer_section .widget {
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.gs_footer_section .widget .widget-title{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    position: relative;
+    text-transform: capitalize;
+}
+.gs_footer_section .widget .widget-title:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #fdc716;
+}
+.gs_footer_section .widget p {
+    color: #ffffff;
+    line-height: 24px;
+}
+.gs_footer_section .widget ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+.widget_address ul li {
+    color: #fff;
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+.widget_address ul li i {
+    color: #fdc716;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.widget_newsletter form input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    border: none;
+    padding: 0px 15px;
+}
+.widget_newsletter form .news_btn {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 38px;
+    margin-top: 10px;
+}
+/*===== copyright footer css start =====*/
+.gs_footer_bottom {
+    background: #fdc716;
+    text-align: center;
+    padding: 25px 0px;
+}
+.copyright_text {
+    padding: 0 15px;
+}
+.copyright_text p {
+    margin-bottom: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.copyright_text p a{
+    color: #ffffff;
+    text-decoration:none;
+}
+.copyright_text p a:hover{
+    color:#333333;
+}
+/*===== copyright footer css start =====*/
+/*----------------------------------------------------------------------------------
+ 20. footer Section css End
+----------------------------------------------------------------------------------*/

@@ -1,0 +1,156 @@
+@media (max-width: 1200px){
+	.gs_navigation > ul > li {
+	    padding: 24px 15px;
+	}
+	.gs_navigation .nav_form{
+		float: left;
+	}
+	.get_quote {
+	    padding: 0 40px;
+	}
+}
+
+@media (min-width: 992px){
+.nav_toggle{
+		display: none;
+	}
+	.gs_navigation_header.sticky_header {
+	    position: fixed;
+	    z-index: 99;
+	    width: 100%;
+	    left: 0;
+	    top: 0;
+	    background: #292929;
+	    -webkit-animation: fromtop 1s 1;
+	    -moz-animation: fromtop 1s 1;
+	    animation: fromtop 1s 1;
+	}
+}
+@media (max-width: 991px){
+/*=== navigation css start ===*/
+	.nav_toggle{
+		display: inline-block;
+	}
+	.gs_navigation {
+	    position: absolute;
+	    z-index: 99;
+	    width: 100%;
+	    background-color: #292929;
+	    left: 0;
+	    top: 80px;
+	    padding: 50px;
+	    -webkit-transform: translateY(-50px);
+	    -moz-transform: translateY(-50px);
+	    -ms-transform: translateY(-50px);
+	    -o-transform: translateY(-50px);
+	    transform: translateY(-50px);
+	    visibility: hidden;
+	    opacity: 0;
+		-webkit-transition: all ease-in 0.3s;
+		-moz-transition: all ease-in 0.3s;
+		-ms-transition: all ease-in 0.3s;
+		-o-transition: all ease-in 0.3s;
+		transition: all ease-in 0.3s;
+	}
+	.gs_navigation.menu_open{
+		 -webkit-transform: translateY(0px);
+	    -moz-transform: translateY(0px);
+	    -ms-transform: translateY(0px);
+	    -o-transform: translateY(0px);
+	    transform: translateY(0px);
+	    visibility: visible;
+	    opacity: 1;
+	}
+	.gs_navigation > ul{
+		width: 100%;
+	}
+	.gs_navigation > ul > li {
+	    padding: 10px 0;
+	    width: 100%;
+	}
+	.gs_navigation > ul > li > a:after{
+		display: none;
+	}
+	.gs_navigation .nav_form {
+	    float: left;
+	}
+	/*=== navigation css end ===*/
+}
+@media (max-width: 991px){
+	.header_top_right{
+		float: left;
+	}
+	.gs_middle_header .gs_header_contacts ul li {
+	    margin-top: 30px;
+	}
+	.get_quote{
+		float: left;
+	}
+	/*=== About section css start ===*/
+	.about_desc{
+		padding-top: 30px;
+	}
+	.about_desc .about_box {
+	    margin-bottom: 50px;
+	}
+	/*=== About section css end ===*/
+	/*===service css start===*/
+	.gs_service_box .service_icon {
+	    vertical-align: middle;
+	}
+	.gs_service_box .service_detail {
+	    padding: 15px;
+	}
+	/*===service css end===*/
+	.gs_counter_bar h5{
+		font-size: 15px;
+	}
+	.ds_contact_address {
+	    margin-top: 50px;
+	}
+}
+@media (max-width: 767px){
+	.gs_header_contacts ul li {
+	    width: 100%;
+	    padding: 0;
+	}
+	.project_body{
+		text-align: center;
+	}
+	.project_thumb{
+		display: inline-block;
+	}
+	.slider_caption {
+		padding: 200px 0;
+	}
+	.slider_caption h2 {
+		font-size: 36px;
+		line-height: 50px;
+	}
+
+}
+@media (max-width: 480px){
+	.testimonial_body .test_paragraph{
+		padding: 40px 20px;
+	}
+	.service_detail h4 {
+	    font-size: 16px;
+	}
+	.header_top_left > div {
+	    width: 100%;
+	}
+	.header_top_left .language_select {
+	    padding-left: 0;
+	}
+	.gs_service_box {
+		text-align: center;
+	}
+	.gs_service_box .service_icon {
+		vertical-align: middle;
+		display: inline-block;
+
+	}
+	.gs_service_box .service_detail {
+		width: 100%;
+	}
+}

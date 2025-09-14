@@ -1,0 +1,39 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 03/07/2017 11:27
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon/Flaticon.eot");
+  src: url("../fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticon/Flaticon.woff") format("woff"),
+       url("../fonts/flaticon/Flaticon.ttf") format("truetype"),
+       url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.flaticon{   
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 0px;
+}
+
+.flaticon-factory-1:before { content: "\f100"; }
+.flaticon-factory:before { content: "\f101"; }
+.flaticon-engineer:before { content: "\f102"; }
+.flaticon-shaking-hands:before { content: "\f103"; }
+.flaticon-pressure:before { content: "\f104"; }
+.flaticon-oiler:before { content: "\f105"; }
+.flaticon-ship:before { content: "\f106"; }
+.flaticon-test-tube:before { content: "\f107"; }
+.flaticon-fuel-station-pump:before { content: "\f108"; }
